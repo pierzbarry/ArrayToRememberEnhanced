@@ -13,15 +13,16 @@ public class Main {
 	do{
         System.out.println("Enter president: ");
         String word = keyboard.next();
+
         if(word.equalsIgnoreCase("history")){
             repeat = false;
         }
         else{
-            history.add(word);
+            history.add(0, word);
         }
     } while(repeat);
-	for(int i = history.size()-1; i >= 0; i--){
-        System.out.println(history.get(i));
+        for (String value : history) {
+            System.out.println(value);
     }
 
 
